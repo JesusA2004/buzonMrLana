@@ -56,9 +56,9 @@ const heroImageMissing = ref(false);
                                 class="mt-0.5 size-5 shrink-0 text-gold"
                             />
                             <p class="text-sm text-muted-foreground">
-                                Si se requiere más información, Recursos
-                                Humanos se pondrá en contacto contigo para
-                                dar el seguimiento correspondiente.
+                                Si se requiere más información, el área
+                                correspondiente se pondrá en contacto contigo
+                                para dar el seguimiento adecuado.
                             </p>
                         </div>
 
@@ -72,15 +72,15 @@ const heroImageMissing = ref(false);
 
         <!-- Right column: institutional visual block -->
         <div
-            class="relative flex flex-col justify-between gap-10 overflow-hidden bg-[#171717] px-8 py-12 text-marfil sm:px-12 lg:min-h-svh lg:px-14 lg:py-16"
+            class="relative flex flex-col justify-between gap-10 overflow-hidden bg-[#071C35] px-8 py-12 text-marfil sm:px-12 lg:min-h-svh lg:px-14 lg:py-16"
         >
             <div class="absolute inset-0">
                 <div
-                    class="size-full bg-gradient-to-br from-[#1E1E1E] via-[#232323] to-[#171717]"
+                    class="size-full bg-gradient-to-br from-[#0B3A67] via-[#0B223D] to-[#071C35]"
                 />
                 <img
                     v-if="!heroImageMissing"
-                    src="/images/bgGracias.jpg"
+                    src="/images/bgGraciasMrLana.jpg"
                     alt=""
                     class="absolute inset-0 size-full object-cover"
                     @error="heroImageMissing = true"
@@ -104,7 +104,7 @@ const heroImageMissing = ref(false);
                 >
                     <img
                         src="/images/logoLetras.png"
-                        alt="Solariega Cenit"
+                        alt="Buzón MR Lana"
                         class="h-20 w-auto object-contain transition-transform duration-300 hover:scale-105 sm:h-28 lg:h-32 xl:h-40"
                     />
                 </div>
@@ -126,7 +126,7 @@ const heroImageMissing = ref(false);
             </div>
 
             <p class="relative z-10 text-xs text-marfil/50">
-                © {{ new Date().getFullYear() }} Solariega Cenit
+                © {{ new Date().getFullYear() }} MR Lana
             </p>
         </div>
     </div>

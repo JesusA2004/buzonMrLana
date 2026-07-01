@@ -12,7 +12,7 @@ return [
     |
     */
 
-    'mail_to' => env('BUZON_MAIL_TO', 'buzon@solariegacenit.com'),
+    'mail_to' => env('BUZON_MAIL_TO', 'buzon@mr-lana.com'),
 
     /*
     |--------------------------------------------------------------------------

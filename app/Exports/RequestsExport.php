@@ -102,10 +102,10 @@ class RequestsExport implements FromCollection, ShouldAutoSize, WithEvents, With
     {
         return [
             1 => [
-                'font' => ['bold' => true, 'color' => ['rgb' => 'D4AF37']],
+                'font' => ['bold' => true, 'color' => ['rgb' => 'F2B705']],
                 'fill' => [
                     'fillType' => Fill::FILL_SOLID,
-                    'startColor' => ['rgb' => '171717'],
+                    'startColor' => ['rgb' => '071C35'],
                 ],
             ],
         ];

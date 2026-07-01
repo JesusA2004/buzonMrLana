@@ -25,9 +25,9 @@ class ReportController extends Controller
         'search', 'status', 'request_type', 'department', 'has_evidence', 'date_from', 'date_to',
     ];
 
-    private const TYPE_COLORS = ['3B82F6', 'D4AF37', '22C55E', 'F97316', '8B5CF6', 'EF4444', '64748B', '171717'];
+    private const TYPE_COLORS = ['135C9C', 'F2B705', '22C55E', 'F97316', '8B5CF6', 'EF4444', '64748B', '071C35'];
 
-    private const STATUS_COLORS = ['3B82F6', 'D4AF37', '22C55E', '64748B', 'EF4444'];
+    private const STATUS_COLORS = ['135C9C', 'F2B705', '22C55E', '64748B', 'EF4444'];
 
     private const EVIDENCE_COLORS = ['8B5CF6', '64748B'];
 

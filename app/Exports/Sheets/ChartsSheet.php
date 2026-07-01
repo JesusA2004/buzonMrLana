@@ -21,11 +21,11 @@ use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
  */
 class ChartsSheet implements WithCharts, WithEvents, WithTitle
 {
-    private const STATUS_COLORS = ['3B82F6', 'D4AF37', '22C55E', '64748B', 'EF4444'];
+    private const STATUS_COLORS = ['135C9C', 'F2B705', '22C55E', '64748B', 'EF4444'];
 
     private const EVIDENCE_COLORS = ['8B5CF6', '64748B'];
 
-    private const PALETTE = ['3B82F6', 'D4AF37', '22C55E', 'F97316', '8B5CF6', 'EF4444', '64748B', '171717'];
+    private const PALETTE = ['135C9C', 'F2B705', '22C55E', 'F97316', '8B5CF6', 'EF4444', '64748B', '071C35'];
 
     /** @var array<string, array{title: string, data: array<int, array{label: string, value: int}>, colors: array<int, string>, type: string, topLeft: string, bottomRight: string, headerRow: int, firstDataRow: int, lastDataRow: int, titleRow: int}> */
     private array $blocks;
@@ -97,10 +97,10 @@ class ChartsSheet implements WithCharts, WithEvents, WithTitle
                 $sheet->setCellValue('A1', 'Gráficas de mensajes');
                 $sheet->mergeCells('A1:B1');
                 $sheet->getStyle('A1')->getFont()->setBold(true)->setSize(14)
-                    ->getColor()->setRGB('D4AF37');
+                    ->getColor()->setRGB('F2B705');
                 $sheet->getStyle('A1')->getFill()
                     ->setFillType(Fill::FILL_SOLID)
-                    ->getStartColor()->setRGB('171717');
+                    ->getStartColor()->setRGB('071C35');
 
                 foreach ($this->blocks as $block) {
                     $this->writeBlock($sheet, $block);
@@ -118,7 +118,7 @@ class ChartsSheet implements WithCharts, WithEvents, WithTitle
     private function writeBlock(Worksheet $sheet, array $block): void
     {
         $sheet->setCellValue("A{$block['titleRow']}", $block['title']);
-        $sheet->getStyle("A{$block['titleRow']}")->getFont()->setBold(true)->getColor()->setRGB('171717');
+        $sheet->getStyle("A{$block['titleRow']}")->getFont()->setBold(true)->getColor()->setRGB('071C35');
 
         $sheet->setCellValue("A{$block['headerRow']}", 'Categoría');
         $sheet->setCellValue("B{$block['headerRow']}", 'Mensajes');

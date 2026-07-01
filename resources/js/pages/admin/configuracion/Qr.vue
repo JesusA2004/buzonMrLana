@@ -36,7 +36,7 @@ onMounted(async () => {
         await QRCode.toCanvas(canvasRef.value, props.publicUrl, {
             width: 360,
             margin: 2,
-            color: { dark: '#1E1E1E', light: '#ffffff' },
+            color: { dark: '#071C35', light: '#ffffff' },
         });
     }
 });
@@ -53,7 +53,7 @@ function downloadPng() {
     }
 
     const link = document.createElement('a');
-    link.download = 'buzon-solariega-cenit-qr.png';
+    link.download = 'buzon-mr-lana-qr.png';
     link.href = canvasRef.value.toDataURL('image/png');
     link.click();
 }
@@ -66,8 +66,8 @@ function downloadPng() {
         <div class="animate-in duration-500 fade-in slide-in-from-bottom-2">
             <h1 class="text-3xl font-semibold">Código QR del buzón</h1>
             <p class="text-sm text-muted-foreground">
-                Comparte este código para que los empleados accedan directamente
-                al formulario público.
+                Comparte este código para que los colaboradores accedan
+                directamente al formulario público.
             </p>
         </div>
 

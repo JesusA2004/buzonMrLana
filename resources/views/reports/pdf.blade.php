@@ -15,7 +15,7 @@
         body {
             font-family: 'Helvetica', sans-serif;
             font-size: 10px;
-            color: #1E1E1E;
+            color: #0B2036;
         }
 
         .masthead {
@@ -24,7 +24,7 @@
             left: 0;
             right: 0;
             height: 60px;
-            border-bottom: 2px solid #D4AF37;
+            border-bottom: 2px solid #F2B705;
             padding-bottom: 10px;
         }
 
@@ -39,14 +39,14 @@
         .masthead h1 {
             font-size: 19px;
             margin: 0;
-            color: #171717;
+            color: #071C35;
             letter-spacing: 0.2px;
         }
 
         .masthead p {
             margin: 2px 0 0;
             font-size: 9px;
-            color: #6B6457;
+            color: #5F6B7A;
         }
 
         .footer {
@@ -55,7 +55,7 @@
             left: 0;
             right: 0;
             height: 30px;
-            border-top: 1px solid #E7E2D8;
+            border-top: 1px solid #DDE5EE;
             padding-top: 6px;
             font-size: 8px;
             color: #94A3B8;
@@ -72,24 +72,24 @@
         h2.section-title {
             font-size: 13px;
             font-weight: bold;
-            color: #171717;
+            color: #071C35;
             margin: 0 0 10px;
             padding-bottom: 5px;
-            border-bottom: 2px solid #D4AF37;
+            border-bottom: 2px solid #F2B705;
         }
 
         .meta-bar {
-            background-color: #FAF9F5;
-            border: 1px solid #E7E2D8;
+            background-color: #FAFAF7;
+            border: 1px solid #DDE5EE;
             border-radius: 8px;
             padding: 8px 12px;
             margin-bottom: 16px;
             font-size: 9px;
-            color: #6B6457;
+            color: #5F6B7A;
         }
 
         .meta-bar strong {
-            color: #171717;
+            color: #071C35;
         }
 
         .kpi-table {
@@ -100,7 +100,7 @@
         }
 
         .kpi-card {
-            border: 1px solid #E7E2D8;
+            border: 1px solid #DDE5EE;
             border-radius: 8px;
             padding: 9px 10px;
             text-align: left;
@@ -117,7 +117,7 @@
             text-transform: uppercase;
             letter-spacing: 0.4px;
             margin-top: 2px;
-            color: #6B6457;
+            color: #5F6B7A;
         }
 
         .charts-grid {
@@ -134,14 +134,14 @@
         }
 
         .chart-card {
-            border: 1px solid #E7E2D8;
+            border: 1px solid #DDE5EE;
             border-radius: 8px;
             overflow: hidden;
         }
 
         .chart-card .chart-card-header {
-            background-color: #171717;
-            color: #D4AF37;
+            background-color: #071C35;
+            color: #F2B705;
             font-size: 9px;
             font-weight: bold;
             text-transform: uppercase;
@@ -165,8 +165,8 @@
         }
 
         .detail-table th {
-            background-color: #171717;
-            color: #D4AF37;
+            background-color: #071C35;
+            color: #F2B705;
             font-size: 8.5px;
             text-transform: uppercase;
             letter-spacing: 0.3px;
@@ -175,7 +175,7 @@
         }
 
         .detail-table td {
-            border-bottom: 1px solid #E7E2D8;
+            border-bottom: 1px solid #DDE5EE;
             padding: 6px 7px;
             text-align: left;
             vertical-align: top;
@@ -183,7 +183,7 @@
         }
 
         .detail-table tr:nth-child(even) td {
-            background-color: #FAF9F5;
+            background-color: #FAFAF7;
         }
 
         .status-pill {
@@ -205,7 +205,7 @@
 
         .files {
             font-size: 7.5px;
-            color: #6B6457;
+            color: #5F6B7A;
             margin-top: 2px;
         }
 
@@ -226,12 +226,12 @@
             <tr>
                 <td style="width: 90px;">
                     @if (file_exists(public_path('images/logoLetras.png')))
-                        <img src="{{ public_path('images/logoLetras.png') }}" alt="Solariega Cenit">
+                        <img src="{{ public_path('images/logoLetras.png') }}" alt="Buzón MR Lana">
                     @endif
                 </td>
                 <td style="text-align: right;">
                     <h1>Reporte de mensajes</h1>
-                    <p>Buzón Solariega &middot; Generado el {{ $generatedAt }}</p>
+                    <p>Buzón MR Lana &middot; Generado el {{ $generatedAt }}</p>
                 </td>
             </tr>
         </table>
@@ -240,7 +240,7 @@
     <div class="footer">
         <table>
             <tr>
-                <td>Buzón Solariega Cenit &middot; Documento confidencial de uso interno</td>
+                <td>Buzón MR Lana &middot; Documento confidencial de uso interno</td>
                 <td style="text-align: right;" class="page-number"></td>
             </tr>
         </table>
@@ -270,15 +270,15 @@
     <table class="kpi-table">
         <tr>
             <td style="width: 16%;">
-                <div class="kpi-card" style="border-color: #171717;">
+                <div class="kpi-card" style="border-color: #071C35;">
                     <div class="kpi-value">{{ $requests->count() }}</div>
                     <div class="kpi-label">Total de mensajes</div>
                 </div>
             </td>
             @foreach ($byStatus as $status)
                 <td style="width: 16%;">
-                    <div class="kpi-card" style="border-color: #{{ $statusColors[$status['key']] ?? 'E7E2D8' }};">
-                        <div class="kpi-value" style="color: #{{ $statusColors[$status['key']] ?? '171717' }};">{{ $status['value'] }}</div>
+                    <div class="kpi-card" style="border-color: #{{ $statusColors[$status['key']] ?? 'DDE5EE' }};">
+                        <div class="kpi-value" style="color: #{{ $statusColors[$status['key']] ?? '071C35' }};">{{ $status['value'] }}</div>
                         <div class="kpi-label">{{ $status['label'] }}</div>
                     </div>
                 </td>
@@ -350,7 +350,7 @@
                     <td>
                         <span
                             class="status-pill"
-                            style="background-color: #{{ $statusTints[$request->status->value] ?? 'F0EDE4' }}; color: #{{ $statusColors[$request->status->value] ?? '171717' }};"
+                            style="background-color: #{{ $statusTints[$request->status->value] ?? 'EEF2F6' }}; color: #{{ $statusColors[$request->status->value] ?? '071C35' }};"
                         >{{ $request->status->label() }}</span>
                     </td>
                     <td>

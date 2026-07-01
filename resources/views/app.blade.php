@@ -22,11 +22,11 @@
         {{-- Inline style to set the HTML background color based on our theme in app.css --}}
         <style>
             html {
-                background-color: #faf9f5;
+                background-color: #fafaf7;
             }
 
             html.dark {
-                background-color: #141414;
+                background-color: #071c35;
             }
         </style>
 
@@ -38,7 +38,7 @@
 
         @vite(['resources/css/app.css', 'resources/js/app.ts', "resources/js/pages/{$page['component']}.vue"])
         <x-inertia::head>
-            <title>{{ config('app.name', 'Buzón Solariega') }}</title>
+            <title>{{ config('app.name', 'Buzón MR Lana') }}</title>
         </x-inertia::head>
 
         @if (request()->routeIs('reportar.create'))
@@ -46,11 +46,11 @@
                 {!! json_encode([
                     '@context' => 'https://schema.org',
                     '@type' => 'WebSite',
-                    'name' => 'Buzón Solariega',
-                    'url' => 'https://buzon.solariegacenit.com',
+                    'name' => 'Buzón MR Lana',
+                    'url' => 'https://buzon.mr-lana.com',
                     'publisher' => [
                         '@type' => 'Organization',
-                        'name' => 'Solariega Cenit',
+                        'name' => 'MR Lana',
                     ],
                 ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
             </script>

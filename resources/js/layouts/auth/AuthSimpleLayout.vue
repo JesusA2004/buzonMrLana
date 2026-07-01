@@ -12,10 +12,10 @@ defineProps<{
 
 <template>
     <div
-        class="relative flex min-h-svh flex-col items-center justify-center gap-6 overflow-hidden bg-gradient-to-br from-[#171717] via-[#1E1E1E] to-[#171717] p-6 md:p-10"
+        class="relative flex min-h-svh flex-col items-center justify-center gap-6 overflow-hidden bg-gradient-to-br from-[#071C35] via-[#0B223D] to-[#071C35] p-6 md:p-10"
     >
         <div
-            class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(45,45,45,0.5),transparent_45%),radial-gradient(circle_at_80%_0%,rgba(212,175,55,0.18),transparent_40%)]"
+            class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(11,58,103,0.5),transparent_45%),radial-gradient(circle_at_80%_0%,rgba(242,183,5,0.18),transparent_40%)]"
         />
 
         <div
@@ -29,7 +29,7 @@ defineProps<{
                     >
                         <img
                             src="/images/logoLetras.png"
-                            alt="Solariega Cenit"
+                            alt="Buzón MR Lana"
                             class="h-20 w-auto object-contain transition-transform duration-300 hover:scale-105 sm:h-28 lg:h-32 xl:h-40"
                         />
                     </Link>
@@ -44,7 +44,7 @@ defineProps<{
                 </div>
 
                 <Card
-                    class="border-[#2a2a2a]/60 bg-card/95 shadow-2xl backdrop-blur"
+                    class="border-[#123B5F]/60 bg-card/95 shadow-2xl backdrop-blur"
                 >
                     <CardContent class="pt-6">
                         <slot />

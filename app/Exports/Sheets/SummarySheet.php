@@ -36,7 +36,7 @@ class SummarySheet implements FromArray, ShouldAutoSize, WithStyles, WithTitle
             ->implode(' | ');
 
         return [
-            ['Reporte de mensajes — Buzón Solariega', ''],
+            ['Reporte de mensajes — Buzón MR Lana', ''],
             ['Generado el', now()->format('d/m/Y H:i')],
             ['Filtros aplicados', $filtrosAplicados !== '' ? $filtrosAplicados : 'Ninguno'],
             ['', ''],
@@ -60,10 +60,10 @@ class SummarySheet implements FromArray, ShouldAutoSize, WithStyles, WithTitle
 
         return [
             1 => [
-                'font' => ['bold' => true, 'size' => 14, 'color' => ['rgb' => 'D4AF37']],
+                'font' => ['bold' => true, 'size' => 14, 'color' => ['rgb' => 'F2B705']],
                 'fill' => [
                     'fillType' => Fill::FILL_SOLID,
-                    'startColor' => ['rgb' => '171717'],
+                    'startColor' => ['rgb' => '071C35'],
                 ],
             ],
             'A2:A12' => ['font' => ['bold' => true]],

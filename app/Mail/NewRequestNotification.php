@@ -16,7 +16,7 @@ class NewRequestNotification extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Nuevo mensaje recibido - Buzón Solariega',
+            subject: 'Nuevo mensaje recibido - Buzón MR Lana',
         );
     }
 

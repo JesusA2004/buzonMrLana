@@ -76,37 +76,37 @@ function submit() {
     <Head>
         <meta
             name="description"
-            content="Canal interno de atención de Solariega Cenit para compartir comentarios, sugerencias y situaciones que requieran seguimiento de forma confidencial y organizada."
+            content="Canal interno de atención de MR Lana para compartir comentarios, sugerencias y situaciones que requieran seguimiento de forma confidencial y organizada."
         />
         <meta
             name="keywords"
-            content="Buzón Solariega, Solariega Cenit, comentarios, sugerencias, seguimiento, atención interna, colaboradores"
+            content="Buzón MR Lana, MR Lana, comentarios, sugerencias, seguimiento, atención interna, colaboradores"
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://buzon.solariegacenit.com/" />
+        <link rel="canonical" href="https://buzon.mr-lana.com/" />
 
-        <meta property="og:title" content="Buzón Solariega" />
+        <meta property="og:title" content="Buzón MR Lana" />
         <meta
             property="og:description"
-            content="Canal interno de atención de Solariega Cenit para compartir comentarios y sugerencias de forma confidencial."
+            content="Canal interno de atención de MR Lana para compartir comentarios y sugerencias de forma confidencial."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://buzon.solariegacenit.com/" />
-        <meta property="og:site_name" content="Buzón Solariega" />
+        <meta property="og:url" content="https://buzon.mr-lana.com/" />
+        <meta property="og:site_name" content="Buzón MR Lana" />
     </Head>
 
     <div class="min-h-svh bg-background lg:grid lg:grid-cols-[42%_58%]">
         <!-- Left column: institutional visual block -->
         <div
-            class="relative flex flex-col justify-between gap-10 overflow-hidden bg-[#171717] px-8 py-12 text-marfil sm:px-12 lg:min-h-svh lg:px-14 lg:py-16"
+            class="relative flex flex-col justify-between gap-10 overflow-hidden bg-[#071C35] px-8 py-12 text-marfil sm:px-12 lg:min-h-svh lg:px-14 lg:py-16"
         >
             <div class="absolute inset-0">
                 <div
-                    class="size-full bg-gradient-to-br from-[#1E1E1E] via-[#232323] to-[#171717]"
+                    class="size-full bg-gradient-to-br from-[#0B3A67] via-[#0B223D] to-[#071C35]"
                 />
                 <img
                     v-if="!heroImageMissing"
-                    src="/images/buzon-hero.png"
+                    src="/images/bgmrlana.png"
                     alt=""
                     class="absolute inset-0 size-full object-cover"
                     @error="heroImageMissing = true"
@@ -127,7 +127,7 @@ function submit() {
             >
                 <img
                     src="/images/logoLetras.png"
-                    alt="Solariega Cenit"
+                    alt="Buzón MR Lana"
                     class="h-20 w-auto object-contain transition-transform duration-300 hover:scale-105 sm:h-28 lg:h-32 xl:h-40"
                 />
             </div>
@@ -136,22 +136,26 @@ function submit() {
                 class="relative z-10 max-w-md animate-in space-y-5 duration-700 fade-in slide-in-from-bottom-4"
             >
                 <div class="space-y-2">
+                    <span
+                        class="inline-block rounded-full border border-gold/30 bg-gold/10 px-3 py-1 text-xs font-semibold tracking-wide text-gold-foreground uppercase"
+                        >Canal interno de atención</span
+                    >
                     <h1 class="text-3xl font-semibold sm:text-4xl">
-                        Buzón Solariega
+                        Buzón MR Lana
                     </h1>
                     <p class="text-lg font-medium text-marfil/90">
-                        Queremos escucharte
+                        Un espacio para compartir comentarios, sugerencias o
+                        situaciones que requieran atención.
                     </p>
                     <p class="text-sm text-marfil/70">
-                        Comparte tus comentarios, sugerencias o cualquier
-                        situación que requiera atención. Cada mensaje será
-                        tratado con seriedad, confidencialidad y respeto.
+                        Queremos escucharte y dar seguimiento a cada mensaje
+                        de forma responsable, respetuosa y confidencial.
                     </p>
                 </div>
             </div>
 
             <p class="relative z-10 text-xs text-marfil/50">
-                © {{ new Date().getFullYear() }} Solariega Cenit
+                © {{ new Date().getFullYear() }} MR Lana
             </p>
         </div>
 
@@ -169,12 +173,11 @@ function submit() {
                         Confidencialidad y seguimiento responsable
                     </p>
                     <p class="mt-1 text-sm text-muted-foreground">
-                        Tu información será tratada con confidencialidad por el
-                        área de Recursos Humanos y, en caso necesario, con la
-                        persona correspondiente para dar seguimiento adecuado.
-                        El objetivo de este espacio es escuchar, atender y
-                        mejorar, cuidando siempre el respeto hacia cada
-                        colaborador.
+                        Tu información será tratada con confidencialidad por
+                        el área correspondiente y, en caso necesario, con la
+                        persona adecuada para dar seguimiento. El objetivo de
+                        este espacio es escuchar, atender y mejorar, cuidando
+                        siempre el respeto hacia cada colaborador.
                     </p>
                 </div>
 
@@ -204,8 +207,8 @@ function submit() {
                                 class="transition-colors hover:border-gold/60"
                             />
                             <p class="text-xs text-muted-foreground">
-                                Este dato será utilizado únicamente si
-                                Recursos Humanos necesita comunicarse contigo
+                                Este dato será utilizado únicamente si el área
+                                correspondiente necesita comunicarse contigo
                                 para dar seguimiento.
                             </p>
                             <InputError :message="form.errors.contact_info" />
@@ -328,8 +331,8 @@ function submit() {
                         >
                             Confirmo que la información proporcionada es
                             correcta según mi conocimiento y entiendo que será
-                            tratada de forma confidencial por el área de
-                            Recursos Humanos para su debida atención y
+                            tratada de forma confidencial por el área
+                            correspondiente para su debida atención y
                             seguimiento.
                         </Label>
                     </div>
@@ -362,7 +365,7 @@ function submit() {
     >
         <div
             v-if="isSubmitting"
-            class="fixed inset-0 z-50 flex items-center justify-center bg-[#171717]/90 backdrop-blur-sm"
+            class="fixed inset-0 z-50 flex items-center justify-center bg-[#071C35]/90 backdrop-blur-sm"
         >
             <div
                 class="mx-4 flex w-full max-w-sm animate-in flex-col items-center gap-5 rounded-2xl border border-gold/20 bg-card px-8 py-10 text-center shadow-2xl zoom-in-95 duration-300 fade-in"

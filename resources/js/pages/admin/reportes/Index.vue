@@ -163,7 +163,7 @@ function makeSelectHandler(points: ChartPoint[], param: string) {
     };
 }
 
-const statusColors = ['#3B82F6', '#D4AF37', '#22C55E', '#64748B', '#EF4444'];
+const statusColors = ['#135C9C', '#F2B705', '#22C55E', '#64748B', '#EF4444'];
 const evidenceColors = ['#8B5CF6', '#64748B'];
 
 const typeSeries = computed(() => [

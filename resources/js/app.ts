@@ -5,7 +5,7 @@ import AuthLayout from '@/layouts/AuthLayout.vue';
 import SettingsLayout from '@/layouts/settings/Layout.vue';
 import { initializeFlashToast } from '@/lib/flashToast';
 
-const appName = import.meta.env.VITE_APP_NAME || 'Buzón Solariega';
+const appName = import.meta.env.VITE_APP_NAME || 'Buzón MR Lana';
 
 createInertiaApp({
     title: (title) => (title ? `${appName} | ${title}` : appName),
@@ -22,7 +22,7 @@ createInertiaApp({
         }
     },
     progress: {
-        color: '#d4af37',
+        color: '#f2b705',
     },
 });
 

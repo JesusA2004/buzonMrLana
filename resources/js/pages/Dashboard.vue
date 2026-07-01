@@ -61,7 +61,7 @@ const props = defineProps<{
 const isMounted = useMounted();
 const { foreColor } = useChartTheme();
 
-const statusColors = ['#3B82F6', '#D4AF37', '#22C55E', '#64748B', '#EF4444'];
+const statusColors = ['#135C9C', '#F2B705', '#22C55E', '#64748B', '#EF4444'];
 const evidenceColors = ['#8B5CF6', '#64748B'];
 
 function hasData(points: ChartPoint[]) {
@@ -115,7 +115,7 @@ const monthOptions = computed<ApexOptions>(() => ({
             },
         },
     },
-    colors: ['#D4AF37'],
+    colors: ['#F2B705'],
     fill: {
         type: 'gradient',
         gradient: {
@@ -242,7 +242,7 @@ const evidenceOptions = computed<ApexOptions>(() => ({
         <div class="animate-in duration-500 fade-in slide-in-from-bottom-2">
             <h1 class="text-3xl font-semibold">Panel administrativo</h1>
             <p class="text-sm text-muted-foreground">
-                Resumen general de mensajes recibidos en Buzón Solariega.
+                Resumen general de mensajes recibidos en Buzón MR Lana.
             </p>
         </div>
 

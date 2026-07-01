@@ -1,5 +1,5 @@
-# Buzón Solariega
+# Buzón MR Lana
 
-Sistema interno de atención y seguimiento para Solariega Cenit.
+Sistema interno de atención y seguimiento para MR Lana.
 
 Uso privado.

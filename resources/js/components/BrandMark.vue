@@ -12,7 +12,7 @@ const props = withDefaults(
 <template>
     <img
         src="/images/logoLetras.png"
-        alt="Solariega Cenit"
+        alt="Buzón MR Lana"
         :class="
             cn(
                 'h-10 w-auto object-contain transition-transform duration-300 hover:scale-105',

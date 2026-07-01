@@ -5,9 +5,9 @@ export function useChartTheme() {
     const { resolvedAppearance } = useAppearance();
 
     const isDark = computed(() => resolvedAppearance.value === 'dark');
-    const foreColor = computed(() => (isDark.value ? '#FAF9F5' : '#1E1E1E'));
-    const mutedColor = computed(() => (isDark.value ? '#B8B2A3' : '#6B6457'));
-    const gridColor = computed(() => (isDark.value ? '#2A2A2A' : '#E7E2D8'));
+    const foreColor = computed(() => (isDark.value ? '#FAFAF7' : '#0B2036'));
+    const mutedColor = computed(() => (isDark.value ? '#9FB1C2' : '#5F6B7A'));
+    const gridColor = computed(() => (isDark.value ? '#123B5F' : '#DDE5EE'));
 
     return { isDark, foreColor, mutedColor, gridColor };
 }
