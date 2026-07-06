@@ -106,57 +106,18 @@ function submit() {
                 />
                 <img
                     v-if="!heroImageMissing"
-                    src="/images/bgmrlana.jpg"
+                    src="/images/bgmrlana.png"
                     alt=""
                     class="absolute inset-0 size-full object-cover"
                     @error="heroImageMissing = true"
                 />
             </div>
             <div
-                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/10"
-            />
-            <div
                 class="pointer-events-none absolute -top-16 -right-16 size-72 rounded-full bg-gold/15 blur-3xl"
             />
             <div
                 class="pointer-events-none absolute inset-x-10 bottom-24 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent"
             />
-
-            <div
-                class="relative z-10 flex animate-in items-center justify-center duration-700 fade-in slide-in-from-top-4"
-            >
-                <img
-                    src="/images/logoLetras.png"
-                    alt="Buzón MR Lana"
-                    class="h-20 w-auto object-contain transition-transform duration-300 hover:scale-105 sm:h-28 lg:h-32 xl:h-40"
-                />
-            </div>
-
-            <div
-                class="relative z-10 max-w-md animate-in space-y-5 duration-700 fade-in slide-in-from-bottom-4"
-            >
-                <div class="space-y-2">
-                    <span
-                        class="inline-block rounded-full border border-gold/30 bg-gold/10 px-3 py-1 text-xs font-semibold tracking-wide text-gold-foreground uppercase"
-                        >Canal interno de atención</span
-                    >
-                    <h1 class="text-3xl font-semibold sm:text-4xl">
-                        Buzón MR Lana
-                    </h1>
-                    <p class="text-lg font-medium text-marfil/90">
-                        Un espacio para compartir comentarios, sugerencias o
-                        situaciones que requieran atención.
-                    </p>
-                    <p class="text-sm text-marfil/70">
-                        Queremos escucharte y dar seguimiento a cada mensaje
-                        de forma responsable, respetuosa y confidencial.
-                    </p>
-                </div>
-            </div>
-
-            <p class="relative z-10 text-xs text-marfil/50">
-                © {{ new Date().getFullYear() }} MR Lana
-            </p>
         </div>
 
         <!-- Right column: form -->
@@ -173,8 +134,8 @@ function submit() {
                         Confidencialidad y seguimiento responsable
                     </p>
                     <p class="mt-1 text-sm text-muted-foreground">
-                        Tu información será tratada con confidencialidad por
-                        el área correspondiente y, en caso necesario, con la
+                        Tu información será tratada con confidencialidad por el
+                        área correspondiente y, en caso necesario, con la
                         persona adecuada para dar seguimiento. El objetivo de
                         este espacio es escuchar, atender y mejorar, cuidando
                         siempre el respeto hacia cada colaborador.
@@ -341,7 +302,9 @@ function submit() {
                     <Button
                         type="submit"
                         class="w-full"
-                        :disabled="!canSubmit || isSubmitting || form.processing"
+                        :disabled="
+                            !canSubmit || isSubmitting || form.processing
+                        "
                     >
                         <Spinner v-if="isSubmitting || form.processing" />
                         {{
@@ -368,27 +331,25 @@ function submit() {
             class="fixed inset-0 z-50 flex items-center justify-center bg-[#071C35]/90 backdrop-blur-sm"
         >
             <div
-                class="mx-4 flex w-full max-w-sm animate-in flex-col items-center gap-5 rounded-2xl border border-gold/20 bg-card px-8 py-10 text-center shadow-2xl zoom-in-95 duration-300 fade-in"
+                class="mx-4 flex w-full max-w-sm animate-in flex-col items-center gap-5 rounded-2xl border border-gold/20 bg-card px-8 py-10 text-center shadow-2xl duration-300 zoom-in-95 fade-in"
             >
                 <div
                     class="flex size-16 items-center justify-center rounded-full bg-gold/15 text-gold-foreground ring-1 ring-gold/40"
                 >
-                    <MailCheck class="size-8 animate-pulse text-gold-foreground" />
+                    <MailCheck
+                        class="size-8 animate-pulse text-gold-foreground"
+                    />
                 </div>
 
                 <div class="space-y-1.5">
-                    <p class="text-lg font-semibold">
-                        Enviando tu mensaje...
-                    </p>
+                    <p class="text-lg font-semibold">Enviando tu mensaje...</p>
                     <p class="text-sm text-muted-foreground">
                         Estamos registrando tu mensaje de forma confidencial.
                         Esto tomará solo un momento.
                     </p>
                 </div>
 
-                <div
-                    class="h-1.5 w-full overflow-hidden rounded-full bg-muted"
-                >
+                <div class="h-1.5 w-full overflow-hidden rounded-full bg-muted">
                     <div
                         class="h-full rounded-full bg-gold"
                         style="animation: buzon-progress 5s linear forwards"
